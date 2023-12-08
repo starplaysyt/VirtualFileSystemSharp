@@ -1,6 +1,6 @@
 using IEStringLibrary;
 
-namespace FileSystemProject;
+namespace VirtualFileSystemSharp;
 
 public static class Visual //for graphics purposes only
 {

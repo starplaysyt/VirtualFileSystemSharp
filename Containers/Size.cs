@@ -1,6 +1,6 @@
-namespace FileSystemProject.Containers;
+namespace VirtualFileSystemSharp.Containers;
 
-public class Size //container to store info about window size
+public class Size //container to store info about size
 {
     public int Width;
     public int Height;

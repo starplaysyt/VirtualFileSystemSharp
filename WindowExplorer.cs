@@ -1,10 +1,9 @@
 using System.Diagnostics;
-using System.Text;
-using FileSystemProject.Containers;
-using FileSystemProject.FileSystemStructures;
 using IEStringLibrary;
+using VirtualFileSystemSharp.Containers;
+using VirtualFileSystemSharp.FileSystemStructures;
 
-namespace FileSystemProject;
+namespace VirtualFileSystemSharp;
 
 public class WindowExplorer
 {

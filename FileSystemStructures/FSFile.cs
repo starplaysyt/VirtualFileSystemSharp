@@ -1,8 +1,6 @@
-using System.Text;
-using FileSystemProject.Interfaces;
 using IEStringLibrary;
 
-namespace FileSystemProject.FileSystemStructures;
+namespace VirtualFileSystemSharp.FileSystemStructures;
 
 public class FSFile
 {

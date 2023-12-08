@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace FileSystemProject.Interfaces;
+namespace VirtualFileSystemSharp.Interfaces;
 
 public interface ISystemStructure
 {

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Text;
-using System.Threading.Channels;
-using System.Xml.Serialization;
-using FileSystemProject.FileSystemStructures;
-using IEStringLibrary;
+﻿using VirtualFileSystemSharp;
 
-namespace FileSystemProject
+namespace VirtualFileSystemSharp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            //Console.WriteLine("Howdy");
+            //Console.WriteLine("Howdy"); I'm hiding!
             //Show();
             WindowExplorer win = new WindowExplorer();
             win.Show();
@@ -59,7 +54,7 @@ namespace FileSystemProject
         }
         
         
-                /*FileStream fs = new("FileSystemProject/disk.dsk", FileMode.Open, FileAccess.Write);
+                /*FileStream fs = new("FileSystemProject/disk.dsk", FileMode.Open, FileAccess.Write); here i am!
                 StreamWriter strwr = new StreamWriter(fs);
                 strwr.WriteLine("[disk/manager/swap1.txt] " + Console.ReadLine());
                 strwr.WriteLine("[disk/manager/swap2.txt] " + Console.ReadLine());

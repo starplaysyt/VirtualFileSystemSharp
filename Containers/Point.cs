@@ -1,6 +1,6 @@
-namespace FileSystemProject.Containers;
+namespace VirtualFileSystemSharp.Containers;
 
-public class Point //container to store info about window position in console
+public class Point //container to store info about position in console
 {
     public int X;
     public int Y;

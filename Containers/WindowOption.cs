@@ -1,6 +1,4 @@
-using IEStringLibrary;
-
-namespace FileSystemProject.Containers;
+namespace VirtualFileSystemSharp.Containers;
 
 public class WindowOption //window option container. You can see this shit in the upper of your window
 {

@@ -1,8 +1,8 @@
-using FileSystemProject.FileSystemStructures;
-using IEStringLibrary;
 using System.Text;
+using IEStringLibrary;
+using VirtualFileSystemSharp.FileSystemStructures;
 
-namespace FileSystemProject;
+namespace VirtualFileSystemSharp;
 
 public static class FileSystem //goddamn main class in project
 {
@@ -31,8 +31,7 @@ public static class FileSystem //goddamn main class in project
         return directoryFiles.ToArray();
     }
         
-    public static FSDirectory[] GetDirectories(IEString way)
-    {
+    public static FSDirectory[] GetDirectories(IEString way) {
         List<FSDirectory> directoryDirectories = new List<FSDirectory>();
         IEString buf = new IEString("");
             
@@ -71,8 +70,9 @@ public static class FileSystem //goddamn main class in project
         return new IEString(chars);
     }    
         
-    public static int WriteOnDisk(int address, string data)
+    public static int WriteOnDisk(int address, string data) //degenerates like you, belong on a cross
     {
+        //remember about building errors, typo
         //replace to public shit, typo
         FileStream fs = new FileStream(way.ToString(), FileMode.Open, FileAccess.Read); //filestream for finding position at the start of the line
         Span<byte> span = new Span<byte>(new byte[512]); //buffer for reading files
@@ -145,7 +145,7 @@ public static class FileSystem //goddamn main class in project
 
         fswr.Close();
         GC.Collect(); //no need (maybe)
-        GC.Collect();
+        GC.Collect(); //no need in it more, but didnt yet analyzed
         GC.Collect();    
 
         return numOfLines;
@@ -210,7 +210,7 @@ public static class FileSystem //goddamn main class in project
             return new IEString(retstr);
         }
 
-    public static void MoveData(long count, long localpos)
+    public static void MoveData(long count, long localpos) //тупое говно тупого говна, медленное дерьмо, либо недостаток проектирования, либо я конченый
     {
         FileStream fs = new FileStream("FileSystemProject/disk.dsk", FileMode.Open, FileAccess.ReadWrite);
         long prevPosition = localpos; //previous stream position in file
